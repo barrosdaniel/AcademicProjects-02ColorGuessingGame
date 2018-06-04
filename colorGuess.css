@@ -1,0 +1,163 @@
+body {
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+#topBar {
+  background-color: rgb(50, 120, 200);
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+h1, h2, h3 {
+  border: 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  padding-top: 30px;
+}
+
+ul {
+  display: flex;
+  background-color: white;
+  color: rgb(50, 120, 200);
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 1.4em;
+  margin: auto;
+}
+
+a {
+  color: inherit;
+}
+
+#innerMenuBar {
+  width: 60%;
+  margin: auto;
+}
+
+li {
+  display: block;
+  padding: 0 10px 0 10px;
+  transition: all 0.3s;
+}
+
+li:hover {
+  color: white;
+  background-color: rgb(50, 120, 200);
+}
+
+li#message:hover {
+  background-color: inherit;
+}
+
+#reset {
+  float: left;
+}
+
+#message {
+  float: center;
+  text-transform: capitalize;
+  color: #333;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+#easyMode {
+  float: right;
+}
+
+#hardMode {
+  float: right;
+}
+
+.modeSelected {
+  color: white;
+  background-color: rgb(50, 120, 200);
+}
+
+#board {
+  display:inline-block;
+  width: 60%;
+}
+
+.wrapperHard {
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px 150px;
+  justify-content: center;
+  align-content: flex-start;
+  grid-gap: 15px;
+  padding: 20px;
+}
+
+.square {
+  border-radius: 1em;
+  width: auto;
+  height: auto;
+  align-content: center;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+}
+
+#sq1 {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: yellow;
+}
+
+#sq2 {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: orange;
+}
+
+#sq3 {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: red;
+}
+
+#sq4 {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: purple;
+}
+
+#sq5 {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: green;
+}
+
+#sq6 {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: blue;
+}
+
+.noDisplay {
+  display: none;
+}
